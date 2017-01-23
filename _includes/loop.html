@@ -23,12 +23,13 @@
             <p>{{ post.content | strip_html | truncatewords: 30 }} <a class="read-more" href="{{ site.baseurl }}{{ post.url | remove: '/' }}">&raquo;</a></p>
         </section>
         <footer class="post-meta">
+            {% if site.image %}<img class="author-thumb" src="{{ site.baseurl }}{{ site.image }}" alt="Author image" nopin="nopin" />{% endif %}
             <!-- author -->
-            <a href='{{ site.baseurl }}author/{{ site.nickname }}'>{{ site.author }}</a>
-            <!-- [[tags prefix=" on "]] -->
-            <time class="post-date" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date_to_string }}</time>
-            <hr style="margin-bottom: 0;"/>
+            <a href='{{ site.baseurl }}author/'>{{ site.author }}</a>
+            |
+            <time datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date_to_string }}</time>
         </footer>
+            <hr style="margin-bottom: 0;"/>
 
     </article>
     {% endfor %}

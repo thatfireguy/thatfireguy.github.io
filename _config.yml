@@ -14,16 +14,16 @@ description: "This is how I'm going to retire at 30."
 author: 'That FIRE Guy'
 # edit 'categories' in the front matter of every post to match this username
 nickname: thatfireguy
-bio: 'Whoa this is my BIO??? TO BE UPDATED!'
+bio: 'Shooting for early retirement at 30.'
 location: 'Bay Area, CA'
-url: 'http://thatfireguy.github.io/'
-image: 'assets/images/casper.png'
+url: 'http://www.thatfireguy.com/'
+image: 'assets/images/burn.png'
 
-short_url: 'thatfireguy.github.io/'
+short_url: 'thatfireguy.com'
 google_analytics: UA-69281367-1
 # disqus: username
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-# baseurl: /
+baseurl: '/'
 
 # Permalinks
 permalink: /:title
